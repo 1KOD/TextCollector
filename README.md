@@ -6,7 +6,7 @@ Temel Özellikleri
 
 * Dinamik ve statik yapılandırma imkanı
 * Dosya keşleme
-* Sayfa içerisinden sunucu tabanlı js,ps,phton vs vs motorları çalıştırmak için ara değiştiricler.
+* Sayfa içerisinden sunucu tabanlı js,ps,phton vs vs motorları çalıştırmak için ara değiştiriciler.
 
 
 
