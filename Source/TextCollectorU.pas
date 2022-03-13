@@ -1,3 +1,6 @@
+//Mehmet Akif BAÅžPINAR
+//https://github.com/1KOD/TextCollector
+
 unit TextCollectorU;
 
 
@@ -361,7 +364,7 @@ begin
   Params:= TList<TSecParamsItem>.Create;
 
   try
-    {$REGION '@extends Ayarlanýyor'}
+    {$REGION '@extends AyarlanÃ½yor'}
     ExtendsSuccess:= False;
     Matchs := GetRexExs(rexExtends,ATextData.Text,[roIgnoreCase]);
 
@@ -378,7 +381,7 @@ begin
     {$ENDREGION}
 
 
-    {$REGION '@sectionlar Alýnýyor'}
+    {$REGION '@sectionlar AlÃ½nÃ½yor'}
     if ExtendsSuccess then
     begin
       Matchs := GetRexExs(rexSecionStop,ATextData.Text,[roIgnoreCase]);
@@ -392,7 +395,7 @@ begin
     {$ENDREGION}
 
 
-    {$REGION '@section Tek Veri gönderme ayarlanýyor'}
+    {$REGION '@section Tek Veri gÃ¶nderme ayarlanÃ½yor'}
     if ExtendsSuccess then
     begin
       Match := GetRexEx(rexSection,ATextData.Text,[roIgnoreCase]);
@@ -419,7 +422,7 @@ begin
     {$ENDREGION}
 
 
-    {$REGION '@yield lar Ayarlanýyor'}
+    {$REGION '@yield lar AyarlanÃ½yor'}
     if ExtendsSuccess then
     begin
       for var Item in Params do
@@ -427,7 +430,7 @@ begin
         ResultList.Text:= StringReplace(ResultList.Text,Format('@yield(''%s'')',[Item.Key]),Item.Value,[rfReplaceAll,rfIgnoreCase]);
       end;
 
-      {$REGION 'Kullanýlmayanlar Temizleniyor'}
+      {$REGION 'KullanÃ½lmayanlar Temizleniyor'}
       Matchs := GetRexExs(reYield,ResultList.Text,[roIgnoreCase]);
 
       for var I := 0 to Matchs.Count-1 do
@@ -440,7 +443,7 @@ begin
     {$ENDREGION}
 
 
-    {$REGION '@sectionlar Ayarlanýyor'}
+    {$REGION '@sectionlar AyarlanÃ½yor'}
     if ExtendsSuccess then
     begin
       Matchs := GetRexExs(rexSecionShow,ResultList.Text,[roIgnoreCase]);
@@ -466,7 +469,7 @@ begin
     {$ENDREGION}
 
 
-    {$REGION '@rexInclude Ayarlanýyor'}
+    {$REGION '@rexInclude AyarlanÃ½yor'}
     Matchs := GetRexExs(rexInclude,ResultList.Text,[roIgnoreCase]);
 
     for var I := 0 to Matchs.Count-1 do
@@ -582,7 +585,7 @@ var
   Encoding: TUTF8Encoding;
   SList: TStringList;
 begin
-  {$REGION 'MemorCache açýk ise hafýzadan okuyor'}
+  {$REGION 'MemorCache aÃ§Ã½k ise hafÃ½zadan okuyor'}
   if ((MemoryCache) And (GLB_FileCache_Exists(AFileName))) then
   begin
     GLB_FileCacheData_Assigned(AFileName,ATextData);
