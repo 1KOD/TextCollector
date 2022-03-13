@@ -1,0 +1,33 @@
+@extends(base.html);
+
+
+@section({"title": "Page 2"})
+
+@section('headScript')
+    {{
+        <!-- Server Side JS or PascalScrip vs vs Engine Code-->
+    }}
+@stop
+
+@section('body')
+    <p><a href="index.html">Main Page</a></p>
+
+    <label>First Name: </label>
+    <label id="firstName"></label>
+    <br>
+    <label>Last Name: </label>
+    <label id="lastName"></label>   
+@stop
+
+
+@section('script')
+    <script>
+        function setPageData(){
+            $("#firstName").text(pageData.firstName);
+            $("#lastName").text(pageData.lastName);
+        }
+
+        setPageData();
+    </script>
+@stop
+

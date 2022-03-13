@@ -1,0 +1,24 @@
+@extends(base.html);
+
+
+
+@section({"title": "TTextCollector","country":"Türkiye"})
+
+
+
+@section('body')
+    <p><a href="index1.html">Page 2</a></p>
+    <p><a href="about.html">About Static Page</a></p>
+
+    <p>Hello TTextCollector</p>
+    @@parent
+    <p><a href="https://github.com/1KOD">Github</a></p>
+@stop
+
+
+
+
+
+@section('script')
+    <script src="js/app.js?v=@vers"></script>
+@stop
