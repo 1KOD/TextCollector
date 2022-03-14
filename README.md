@@ -4,10 +4,11 @@ TextCollector laravel blade yapısı tarzında sayfalarınız birleştirmeyi sa�
 
 Temel Özellikleri
 
+* Yüksek performans
 * Dinamik ve statik yapılandırma imkanı
 * Dosya keşleme
 * Sayfa içerisinden sunucu tabanlı js,ps,phton vs vs motorları çalıştırmak için ara değiştiriciler.
-
+* Tarayıcılar için deflate sıkıştırma özelliği.
 
 
 
@@ -17,9 +18,11 @@ TextCollector provides to combine your pages in the style of laravel blade struc
 
 Key Features
 
+* High performance
 * Possibility of dynamic and static configuration
 * File browsing
 * Interchangers to run server-based js, ps, phton etc. engines from within the page.
+* Deflate compression feature for browsers.
 
 
 
